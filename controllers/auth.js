@@ -54,7 +54,7 @@ const googleSignIn = async(req, res = response) => {
 
         const { name, email, picture } = await googleVerify(googleToken);
 
-        const usuarioDB = await Usuario.findOne({ emai });
+        const usuarioDB = await Usuario.findOne({ email });
         let usuario;
 
         if (!usuarioDB) {
