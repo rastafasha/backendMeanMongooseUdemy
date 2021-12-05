@@ -15,6 +15,9 @@ app.use(express.json());
 //db
 dbConnection();
 
+//directiorio publico de pruebas de google
+app.use(express.static('public'));
+
 
 //rutas
 app.use('/api/usuarios', require('./routes/usuarios'));
