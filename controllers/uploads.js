@@ -79,11 +79,15 @@ const retornaImagen = (req, res) => {
         res.sendFile(pathImg);
 
     } else {
-        const pathImg = path.join(__dirname, `../uploads/no-image.jpg`);
+        const pathImg = path.join(__dirname, `../uploads/${tipo}/no-image.jpg`);
+        res.sendFile(pathImg);
     }
 
 
 };
+
+
+
 
 
 

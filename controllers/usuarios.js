@@ -12,7 +12,7 @@ const getUsuarios = async(req, res) => {
     /*const usuarios = await Usuario
         .find({}, 'nombre email role google') //esto ultimo filtra el resultado
         .skip(desde)
-        .limit(3);
+        .limit(5);
 
     const total = await Usuario.count();*/
 
@@ -20,7 +20,7 @@ const getUsuarios = async(req, res) => {
         Usuario
         .find({}, 'nombre email role google img') //esto ultimo filtra el resultado
         .skip(desde)
-        .limit(3),
+        .limit(5),
 
         Usuario.countDocuments()
     ]);
